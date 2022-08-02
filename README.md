@@ -40,7 +40,7 @@ It takes care of all of the load-balancing, multiple region support, public-faci
 
 In theory.
 
-I tried multiple times to deploy this compiled node.js app into Elastic Beanstalk, but no matter how I did it, I kept coming up with a 504 error when trying to access the endpoint, and the health checks were coming back as severe.
+I tried multiple times to deploy this compiled node.js app into Elastic Beanstalk, but no matter how I did it, I kept coming up with a 502 error when trying to access the endpoint, and the health checks were coming back as severe.
 
 My deployment method for this code was sound, as I was able to deploy a hello world node.js app into EBS, using the same zip format as the downloaded quest zip, and access it without a problem.
 
@@ -55,7 +55,7 @@ I thought about running an strace on the container, in my local docker environme
 
 Elastic Beanstalk should be the way to go to deploy this quest app into AWS.
 
-But having not used it before, I think I’m missing a security group setting or something that prevents me from getting past that 504 error.
+But having not used it before, I think I’m missing a security group setting or something that prevents me from getting past that 502 error.
 
 I would need another set of eyes :)
 
